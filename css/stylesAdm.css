@@ -1,0 +1,142 @@
+body {
+    background-color:#3d4852; /* Fond gris foncé */
+  }
+  
+  header {
+    text-align: center;
+    background-color:#ea5c0d;
+    padding: 20px;
+    color: white;
+  }
+  
+  form {
+    background-color:#ea5c0d;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  form table {
+    width: 100%;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="reset"],
+  form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form input[type="reset"]
+  {
+    background-color: #f44336; 
+    color: white;
+    cursor: pointer;
+  }
+  form input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  form input[type="reset"]:hover
+   {
+    background-color: #ca7575;
+  }
+  form input[type="submit"]:hover {
+    background-color: #3e8e41
+  }
+  
+  legend h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+
+  /* Style général pour les boutons radio */
+  
+  /* Style personnalisé pour les boutons radio */
+  input[type="radio"] + label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #0066cc; /* Couleur bleue pour les boutons */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Style au survol des boutons radio */
+  input[type="radio"] + label:hover {
+    background-color: #004080; /* Couleur bleue foncée au survol des boutons */
+  }
+  
+  /* Style pour le bouton radio sélectionné */
+  input[type="radio"]:checked + label {
+    background-color: #004080; /* Couleur bleue foncée pour le bouton sélectionné */
+  }
+  
+  input[type="radio"]:checked + label::before {
+    background-color: white; /* Couleur blanche pour le point intérieur */
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: radio !important;
+    appearance: radio !important;
+  }
+
+  .custom-button {
+    display: inline-block;
+    background-color: #ea5c0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-container textarea {
+    margin-right: 10px;
+}
+  
+  
+  
+  

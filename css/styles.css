@@ -1,0 +1,371 @@
+    html, body {
+	padding:0;
+	margin:0;
+    }
+	p {
+		color:#ffffff;
+	}
+	header {
+		overflow: hidden;
+		border: 1px solid black;
+		text-align: center;
+		padding:15px 0px;/*Marge horizontale*/
+		background-color:#ea5c0d; /*Couleur de fond*/
+		top: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 100; /* Empilement au-dessus du contenu */
+	  }
+	  
+	  header ul {
+		margin: 0 auto;
+		list-style: none;
+		overflow: hidden;
+		padding: 0 10px;
+	  }
+	  
+	  header li a {
+		display: block;
+		padding: 20px;
+		text-decoration: none;
+		transition: all 1s;
+		color: #fff;
+		margin-top: 15px;
+	  }
+	  
+	  header li a:hover,header .boutton:hover {
+		background-color: #505050;
+	  }
+	  
+	  header .logo {
+		display: block;
+		float: left;
+		font-size: 2em;
+		padding: 10px 20px;
+		text-decoration: none;
+	  }
+	  
+	  header .menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .1s linear;
+	  }
+	  header .menu-icon {
+		padding: 15px;
+		position: relative;
+		cursor: pointer;
+		width: 90%;
+		display: block;
+		border-radius: 10px;
+		color: white;
+		background-color: #f7af3e;;
+	  } 
+	  
+	  header .boutton {
+		display: none;
+	  }
+	  
+	  header .boutton:checked~.menu {
+		max-height: 700px;
+	  }
+	  
+	  header .boutton:checked~.menu > li > a:hover {
+		background-color: #505050;
+	  }
+	  
+	
+	  a.defilant:visited {
+		color: #3d4852;
+	}
+	
+	a.defilant:hover,
+	a.defilant:focus,
+	a.defilant:active {
+		background-color: #3d4852;
+		color: white;
+	}
+	
+	a.defilant:focus {
+		outline: thin solid #3d4852;
+	}
+	
+	a.defilant:hover,
+	a.defilant:active {
+		outline: 0;
+	}
+	
+	a.button {
+		align-items: center;
+		background-color: #3d4852;
+		border: 1px solid #3d4852;
+		border-radius: 4px;
+		color: white;
+		cursor: pointer;
+		display: inline-flex;
+		padding: 0.25rem 0.75rem;
+		text-decoration: none;
+		transition: all 0.25s ease-in-out;
+	}
+	
+	a.button:hover,
+	a.button:focus {
+		background-color: #58636F;
+		box-shadow: 0 0 2px 2px #bac6d3;
+	}
+	
+	a.button:focus {
+		outline: 1px solid #3d4852;
+	}
+	
+	a.button:visited {
+		color: #fff;
+	}
+	
+	ul.defilant {
+		margin: 0 0 1.5rem;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	li.defilant {
+		display: inline-block;
+	}
+	
+	img.defilant {
+		height: auto;
+		margin-bottom: .5rem;
+		max-width: calc(100% + 2rem);
+		position: relative;
+		left: -1rem;
+		right: -1rem;
+	}
+	
+	p.defilant {
+		margin: 0 0 .5rem;
+	}
+	
+	main.defilant {
+		padding: 1rem 2rem;
+		margin: auto;
+	}
+	
+	.card {
+		border: 1px solid #bac6d3;
+		border-radius: 8px;
+		padding: 1rem;
+	}
+	
+	/********************************
+	* Carousel styles
+	*********************************/
+	.carousel-items {
+		display: flex;
+		overflow-x: scroll;
+		padding: 1rem 0;
+		scroll-snap-type: x mandatory;
+	}
+	
+	.carousel-item {
+		flex: 1 0 250px;
+		margin-left: 1rem;
+		scroll-snap-align: start;
+	}
+	
+	::-webkit-scrollbar-track {
+		background-color: #F5F5F5;
+	}
+	
+	::-webkit-scrollbar {
+		height: 6px;
+		background-color: #F5F5F5;
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background-color: #3d4852;
+		border-radius: 3px;
+	}
+	
+	
+	/********************************
+	* Breakpoints
+	*********************************/
+	@media screen and (min-width: 576px) {
+		.carousel-item {
+			flex-basis: 300px;
+		}
+	}
+	
+	@media screen and (min-width: 992px) {
+	
+		.carousel-item {
+			flex-basis: 325px;
+		}
+	}
+	
+	@media screen and (min-width: 1280px) {
+	
+		.carousel-item {
+			flex-basis: 450px;
+		}
+	}
+	footer {
+		padding:10px 0px;
+		background-color:#505050;
+		text-align:center;
+	}
+	footer > p {
+		text-align:center;
+	}
+	.fa-twitter {
+		background: #505050;
+		color: white;
+		padding: 20px;
+		font-size: 30px;
+		width: 50px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+	}
+	.fa-twitter:hover {
+		background-color:#f7af3e;
+		transition-property: background-color;
+		transition-duration: .5s;
+		transition-timing-function: linear, ease-out;
+	}
+	.footer-menu{
+	  float: right;
+	}
+
+	.footer-menu ul{
+	  display: flex;
+	}
+
+	.footer-menu ul li{
+	padding-right: 10px;
+	display: block;
+	}
+
+	.footer-menu ul li a{
+	  color: #ffffff;
+	  text-decoration: none;
+	  transition: 2s;
+	}
+
+	.footer-menu ul li a:hover{
+	  color: #f7af3e;
+	  transition: 5s;
+	}
+	
+	#background-video {
+	  height: 65vh;
+	  width: 100vw;
+	  object-fit: cover;
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  z-index: -1;
+	}
+
+	h1.video, h2.video {
+	  color: white;
+	  font-weight: bold;
+	  text-align: center;
+	  text-shadow: 1px 1px 2px orange, 0 0 1em black, 0 0 0.2em orange;
+	}
+
+	h1.video {
+	  font-size: 6rem;
+	  margin-top: 30vh; 
+	}
+
+	h2.video { font-size: 3rem; }
+	
+	.cont {
+	  display:flex;
+	  list-style: none;
+	}
+
+	.cont-li {
+	  border-right:1px solid black;
+	}
+	
+	.scroll {
+	  scroll-behavior: smooth;
+	  scroll-margin: 20px;
+	}
+	  
+@media (min-width: 550px) {
+
+  header ul {
+    display: inline-block;
+  }
+
+  header li {
+    float: left;
+  }
+
+  header li a {
+    padding: 20px 30px;
+    margin: 0 10px;
+  }
+
+  header .menu {
+    clear: none;
+    max-height: none;
+  }
+
+  header .menu-icon {
+    display: none;
+  }
+}
+
+.ligne-verticale {
+	position: relative;
+  }
+  
+  .ligne-verticale::before,
+  .ligne-verticale::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 2px;
+	height: 100%;
+  }
+  
+  .ligne-verticale::before {
+	left: -5px; /* Décalage vers la gauche */
+  }
+  
+  .ligne-verticale::after {
+	right: -5px; /* Décalage vers la droite */
+  }
+  
+  .ligne-verticale h3,
+  .ligne-verticale h4,
+  .ligne-verticale p {
+	margin-left: 300px; /* Décalage du texte vers la droite */
+	margin-right: 300px; /* Décalage du texte vers la gauche */
+  }
+  @media screen and (max-width: 768px) {
+	.ligne-verticale::before,
+	.ligne-verticale::after {
+	  display: none; /* Masquer la ligne verticale sur les petits écrans */
+	}
+	.ligne-verticale h3,
+	.ligne-verticale h4,
+	.ligne-verticale p {
+	  margin-left: 0; /* Supprimer le décalage du texte sur les petits écrans */
+	  margin-right: 0;
+	}
+  } 
+  #menu {
+	display: none; /* Masquer le menu par défaut */
+  }
+  
+  #menu.open {
+	display: block; /* Afficher le menu lorsque la classe "open" est ajoutée */
+  }   
+  
+  
